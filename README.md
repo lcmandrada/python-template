@@ -11,12 +11,12 @@ Unit tests
 ### Dev Tools
 | Library | Version | Description
 | ----------- | ----------- | ----------- |
-| `isort` | ^5.1.1 | sort imports |
-| `black` | ^20.8b1 | code formatter  |
-| `mypy` | ^0.782 | static type checker |
-| `flake8` | ^3.8.3 | linter |
-| `pytest` | ^5.4.3 | run unit tests |
-| `pytest-cov ` | ^2.10.0 | test coverage  |
+| `isort` | ^5.10.1 | sort imports |
+| `black` | ^22.1.0 | code formatter  |
+| `mypy` | ^0.931 | static type checker |
+| `flake8` | ^4.0.1 | linter |
+| `pytest` | ^7.0.1 | run unit tests |
+| `pytest-cov ` | ^3.0.0 | test coverage  |
 
 ### `Makefile`
 Directives for Dev Tools
