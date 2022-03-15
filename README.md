@@ -8,6 +8,9 @@ Source code
 ### Tests Directory
 Unit tests
 
+### `Makefile`
+Directives for Dev Tools
+
 ### Dev Tools
 | Library | Version | Description
 | ----------- | ----------- | ----------- |
@@ -17,9 +20,6 @@ Unit tests
 | `flake8` | ^4.0.1 | linter |
 | `pytest` | ^7.0.1 | run unit tests |
 | `pytest-cov ` | ^3.0.0 | test coverage  |
-
-### `Makefile`
-Directives for Dev Tools
 
 ### `pyproject.toml`
 Project configurations
@@ -59,26 +59,28 @@ GitHub pull request template
 │   │   ├── ci.yaml
 │   ├── CODEOWNERS
 │   ├── pull_request_template.md
+├── {{package_name}}
+│   ├── __init__.py
+├── tests
+│   └── __init__.py
+├── .dockerignore
 ├── .flake8
 ├── .gitignore
 ├── AUTHORS.rst
 ├── CONTRIBUTING.rst
+├── Dockerfile
 ├── HISTORY.rst
 ├── LICENSE
 ├── Makefile
 ├── mypy.ini
 ├── pyproject.toml
 ├── pytest.ini
-├── README.rst
-├── {{package_name}}
-│   ├── __init__.py
-└── tests
-    └── __init__.py
+└── README.rst
 ```
 
 ## Note
-- uses Python 3.9.9 or latest
-- uses `poetry` for package and dependency management
+Uses Python 3.9.9 or latest  
+Uses `poetry` and `git`
 
 ## Usage
 1. Install `cookiecutter`.
@@ -100,10 +102,5 @@ GitHub pull request template
   # ssh
   $ cookiecutter git@github.com:lcmandrada/python-template.git
   ```
-3. Provide the details it asks.
-4. At this point, the files and configurations are already created.
-5. Install the project and its dependencies.
-  ```bash
-  # in the project's root directory
-  $ poetry install
-  ```
+3. Provide necessary details.
+4. At this point, the project is ready.

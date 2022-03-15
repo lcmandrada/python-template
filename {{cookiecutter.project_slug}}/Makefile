@@ -59,3 +59,28 @@ install: clean
 # Run app
 run:
 	poetry run python {{cookiecutter.package_name}}/{{cookiecutter.project_slug}}.py
+
+# Build a Docker image
+docker-build:
+	docker build . -t {{cookiecutter.project_slug}}
+
+# Run app in a container
+docker-run:
+	docker run -it {{cookiecutter.project_slug}}
+
+# Open an interactive shell inside a container
+docker-sh:
+	docker run -it --entrypoint /bin/sh {{cookiecutter.project_slug}}
+
+# Remove stopped containers
+docker-rm:
+	docker rm $$(docker ps -a -f status=exited -q)
+
+# Remove dangling resources
+docker-prune:
+	docker system prune
+
+# Remove dangling and unused resources
+# Useful for recovering Docker storage space
+docker-prune-all:
+	docker system prune -a

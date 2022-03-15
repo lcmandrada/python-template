@@ -84,4 +84,23 @@ make install
 make run
     Run app
 
+docker-build
+	Build a Docker image
+
+docker-run
+    Run app in a container
+
+docker-sh
+    Open an interactive shell inside a container
+
+docker-rm
+    Remove stopped containers
+
+docker-prune
+    Remove dangling resources
+
+docker-prune-all
+    Remove dangling and unused resources
+    Useful for recovering Docker storage space
+
 .. _poetry: https://python-poetry.org/docs/#osx-linux-bashonwindows-install-instructions
