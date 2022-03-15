@@ -1,6 +1,11 @@
 # Python Template
 
-A cookiecutter for Python projects. It creates the files below.
+A cookiecutter for Python projects.
+
+Python 3.9.9 or latest  
+`poetry` and `git`
+
+## Files
 
 ### Package Directory
 Source code
@@ -77,10 +82,6 @@ GitHub pull request template
 ├── pytest.ini
 └── README.rst
 ```
-
-## Note
-Uses Python 3.9.9 or latest  
-Uses `poetry` and `git`
 
 ## Usage
 1. Install `cookiecutter`.
