@@ -3,9 +3,11 @@
 A cookiecutter for Python projects.
 
 ## Requirements
-Python 3.9.9 or latest    
-`poetry`  
-`git`
+```
+Python 3.9.9 or latest
+poetry
+git
+```
 
 ## Files
 
