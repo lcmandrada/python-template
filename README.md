@@ -2,8 +2,10 @@
 
 A cookiecutter for Python projects.
 
-Python 3.9.9 or latest  
-`poetry` and `git`
+## Requirements
+Python 3.9.9 or latest    
+`poetry`  
+`git`
 
 ## Files
 
