@@ -4,7 +4,7 @@ A cookiecutter for Python projects.
 
 ## Requirements
 ```
-Python 3.9.9 or latest
+Python 3.9.13
 poetry
 git
 ```
